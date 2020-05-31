@@ -4,7 +4,6 @@
 
 var navToggle = document.getElementById("nav-toggle")
 navToggle.addEventListener("click", function(){
-    console.log(navToggle.src)
     var imgSrc = navToggle.src;
     if (imgSrc.indexOf('hamburger.svg')!=-1) {
         navToggle.src  = 'assets/icons/close.svg';
@@ -28,3 +27,5 @@ navToggle.addEventListener("click", function(){
    
 
 });
+
+

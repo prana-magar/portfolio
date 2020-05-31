@@ -244,7 +244,7 @@ nav {
   #mockup-img{
       width: 100%;
       height: 100%;
-      background-image: url(../images/project-mockup.png);
+      background-image: url(../images/mockup-back.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -512,14 +512,35 @@ nav {
             flex-grow: 10;
         }
 
+        #project-collage li {
+            position: relative;
+        }
+
         #project-collage img {
             max-height: 100%;
             min-width: 100%;
             object-fit: cover;
             vertical-align: bottom;
+            opacity: 30%;
+            transition: all 0.3s ease-in-out;
         }
 
+        #project-collage div{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+            max-width: 100%;
+            
+        }
 
+       
 
 
 
@@ -552,6 +573,71 @@ nav {
                 min-width: 0;
             }
         }
+
+
+    /* Project overlay design styles*/
+
+    #project-overlay{
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        opacity: 85%;
+        z-index: 5;
+    }
+
+
+
+    #project-overlay img{
+        display: none;
+        position: fixed;
+        top: 5%;
+        left: calc(100vw - 10%);
+    }
+
+    #project-overlay.overlay-show{
+        display: block;
+    }
+
+    #project-overlay.overlay-show img{
+        display: block;
+    }
+
+    #project-collage .overlay-hide {
+        display: none
+    }
+
+    #project-collage .overlay-content{
+        display: block;
+        position: fixed;
+        top: 30%;
+        left: 10%;
+        z-index: 6;
+        color: white;
+        font-weight: bold;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    #project-collage .overlay-content h3 {
+        font-size:1.4rem;
+    }
+
+    #project-collage .overlay-content p {
+        font-size:0.8rem;
+        color: #D1D0D0;
+    }
+
+    #project-collage .overlay-content.overlay-hide{
+        display: none;
+       
+    }
+
+   
+        
 
     
 /* style for tablet mode
@@ -693,8 +779,50 @@ header {
 }
 
 #project-collage{
-    padding: 1rem 5rem;
+    padding: 1rem 20%;
  }
 
 
+ #project-collage .overlay-content h3 {
+    font-size:2.2rem;
 }
+
+#project-collage .overlay-content p {
+    font-size:1.5rem;
+    color: #D1D0D0;
+}
+
+}
+
+
+@media only screen and (min-width: 999px) {
+
+
+
+    #project-collage img {
+        opacity: 90%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #project-collage div{
+        display: none;
+       transition: all 0.3s ease-in-out;
+       font-size: 2rem;
+
+        
+    }
+
+
+
+    #project-collage li:hover img {
+        opacity: 30%;
+    }
+
+    #project-collage li:hover img + div{
+        display: block;
+    }
+
+   
+
+}
+
