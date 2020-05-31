@@ -371,6 +371,189 @@ nav {
         background-color: #FFF8F8;
     }
 
+
+    /* Styles for exeprience sector*/
+    #experience-section{
+        background-color: #FFFFFF;
+    }
+
+    #lambton-img{
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/lambton-logo-research.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+  
+    }
+
+    
+
+    #experience-section{
+        color: #000000;
+    }
+
+    #experience-section h3 {
+        color: #000000;
+    }
+
+    #experience-section p {
+        color: #484646;
+        margin-bottom: 1rem;
+    }
+
+    #experience-section  .cta-btn {
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+
+  
+    /* experience comments styles*/
+
+    .headshots
+    {
+        list-style: none;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .headshot {
+        height: 70px;
+        width: 70px;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+        position: relative;
+        margin-bottom: 50px;
+        
+    }
+
+    .message-bubble {
+        position: absolute;
+        left:100%;
+        bottom: 50%;
+        margin-left: 0.5rem;
+        width: 300px;
+        max-width: calc(100vw - 102px);
+        background-color: #484646;
+        border-radius: 20px 20px 20px 5px;
+       
+    }
+
+    #experience-section .message-bubble >.comment{
+        font-size: 0.8rem;
+        font-style: italic;
+        color: white;
+        margin-bottom: 0px;
+
+    }
+
+    #experience-section  .message-bubble >.designation{
+        font-size: 0.8rem;
+        color: #DDD7D7;
+        padding-left: 1rem;
+
+    }
+
+    #message-container{
+        justify-content: flex-start;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        background-color: #CCCCCC;
+    }
+
+    footer a {
+        height: auto;
+    }
+
+    footer ul{
+
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+        margin: 2px 5px 2px 5px;
+    }
+
+    footer li {
+        margin-right: 5px;
+    }
+
+
+
+    /* Styles for project page starts here*/
+
+        #project-collage{
+           padding: 0.1rem 0.8rem;
+        }
+
+        #project-collage ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto;
+            padding-left: 0px;
+        }
+
+        #project-collage li {
+            height: 40vh;
+            flex-grow: 1;
+        }
+
+        #project-collage li:last-child {
+            flex-grow: 10;
+        }
+
+        #project-collage img {
+            max-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            vertical-align: bottom;
+        }
+
+
+
+
+
+        @media (max-aspect-ratio: 1/1) {
+            #project-collage li {
+                height: 30vh;
+            }
+        }
+
+
+        @media (max-height: 480px) {
+            #project-collage li {
+                height: 80vh;
+            }
+        }
+
+
+        @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+            #project-collage ul {
+                flex-direction: row;
+            }
+
+            #project-collage li {
+                height: auto;
+                width: 100%;
+            }
+            #project-collage img {
+                width: 100%;
+                max-height: 75vh;
+                min-width: 0;
+            }
+        }
+
+    
 /* style for tablet mode
 My grid sytem has mainly two column for display each looks good around 320px so anything below 680=(320*2 +10+ 20) 
 will move to default mobile view 
@@ -499,6 +682,19 @@ header {
 .cta-btn{
     margin: 0px 0.8rem 0px 0.5rem;
 }
+
+
+
+.message-bubble {
+   
+    max-width: calc(100vw/2 - 122px);
+
+   
+}
+
+#project-collage{
+    padding: 1rem 5rem;
+ }
 
 
 }
