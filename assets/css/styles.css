@@ -94,6 +94,7 @@ nav {
 
 .nav-link a.selected {
     text-decoration: underline;
+    color: whitesmoke;
     
 }
 
@@ -711,7 +712,7 @@ nav {
     }
 
     .experience-table{
-        color: white;
+        color: black;
         max-width: 90%;
         background-color: gray;
         margin: 1rem auto 1rem auto;
@@ -906,7 +907,6 @@ header {
 
  /* table styles*/
   .experience-table{ 
-    color: white;
     width: 60%;
     font-size: 1rem;
 
