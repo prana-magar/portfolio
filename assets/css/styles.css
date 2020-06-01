@@ -465,9 +465,11 @@ nav {
 
     footer{
         
+       
         display: flex;
         justify-content: center;
         background-color: #CCCCCC;
+
     }
 
     footer a {
@@ -491,6 +493,30 @@ nav {
 
 
     /* Styles for project page starts here*/
+
+        .container{
+            display: flex;
+            justify-content: center;
+            padding: 1rem 1rem;
+        }
+
+        .container aside{
+            /* background-color: red; */
+            display: none;
+            font-size: 0.8rem;
+            color: white;
+        }
+
+        .container aside ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+
+        .container aside ul li {
+            padding-top: 1rem;
+        }
 
         #project-collage{
            padding: 0.1rem 0.8rem;
@@ -647,7 +673,7 @@ nav {
 
     .form-container{
         max-width: 95%;
-        margin: 2px auto 2px auto;
+        margin: 2px auto 20% auto;
     } 
 
     .form-group {
@@ -735,6 +761,8 @@ nav {
     .experience-table tr:nth-of-type(even){
         background-color: #A9A9A9;
     }
+
+    
 
     
 /* style for tablet mode
@@ -875,8 +903,28 @@ header {
    
 }
 
+.container {
+    padding: 1rem 5%;
+}
+
+.container aside{
+    display: block;
+    width: 20%;
+    margin: 1.9rem 1rem;
+    font-size: 1rem;
+    font-weight:bolder ;
+}
+
+.container aside ul{
+    padding-left: 0.5rem;
+    list-style: none;
+
+
+}
+
 #project-collage{
-    padding: 1rem 20%;
+    padding: 1rem 1rem;
+    width:60%
  }
 
 
@@ -891,7 +939,7 @@ header {
 
 .form-container{
     max-width: 40%;
-    margin: 2px auto 2px auto;
+    margin: 2px auto 20% auto;
 } 
 
 .input-group label{
