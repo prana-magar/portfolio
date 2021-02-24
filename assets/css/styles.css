@@ -967,13 +967,17 @@ header {
 
 }
 
-.project-lister, .project-navigator li{
+.project-lister, .project-navigator li, #overlay-close-btn{
     cursor: pointer;
 }
 
 .project-navigator li:hover {
     font-size: large;
     color: #9D0B28;
+}
+
+#overlay-close-btn:hover {
+    font-size: large;
 }
 
 
