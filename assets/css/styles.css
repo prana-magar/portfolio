@@ -967,6 +967,15 @@ header {
 
 }
 
+.project-lister, .project-navigator li{
+    cursor: pointer;
+}
+
+.project-navigator li:hover {
+    font-size: large;
+    color: #9D0B28;
+}
+
 
 @media only screen and (min-width: 999px) {
 
